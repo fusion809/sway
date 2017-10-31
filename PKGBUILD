@@ -1,7 +1,7 @@
 # $Id$
 
 pkgname=sway
-pkgver=0.15.rc3
+pkgver=0.15.rc4
 _pkgver=${pkgver/.r/-r}
 pkgrel=1
 pkgdesc="i3 compatible window manager for Wayland"
@@ -25,7 +25,7 @@ source=(
 	"$pkgname-$pkgver.tar.gz::https://github.com/SirCmpwn/$pkgname/archive/${_pkgver}.tar.gz"
 )
 install="$pkgname.install"
-sha256sums=('29c56c7394e774ec234883082ebbee480849426860f2e19ff7f86f3492e9a5d8')
+sha256sums=('37e35424298c84b2d47480a2db54f250cc6958978fd2a1de09b1e748bd5c163d')
 
 build() {
         SRC=$srcdir/sway-${_pkgver}
